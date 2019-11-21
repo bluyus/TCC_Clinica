@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE8D04AF-07A8-4FC8-9B8A-8FA14A57B715}</ProjectGuid>
+    <ProjectGuid>{AA3B34B6-74CD-4DC3-947C-64709DB274C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AcessoDados.Contratos</RootNamespace>
-    <AssemblyName>AcessoDados.Contratos</AssemblyName>
+    <RootNamespace>AcessoDados.Implementacoes</RootNamespace>
+    <AssemblyName>AcessoDados.Implementacoes</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -50,18 +50,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMainContext.cs" />
+    <Compile Include="MainContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ObjetosNegocio\ObjetosNegocio.csproj">
-      <Project>{17F88CAC-374F-4435-8FC3-179A97704996}</Project>
-      <Name>ObjetosNegocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessoDados.Contratos\AcessoDados.Contratos.csproj">
+      <Project>{AE8D04AF-07A8-4FC8-9B8A-8FA14A57B715}</Project>
+      <Name>AcessoDados.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetosNegocio\ObjetosNegocio.csproj">
+      <Project>{17F88CAC-374F-4435-8FC3-179A97704996}</Project>
+      <Name>ObjetosNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcessoDados.Contratos
+namespace Repositorio.Implementacoes
 {
     public class Class1
     {

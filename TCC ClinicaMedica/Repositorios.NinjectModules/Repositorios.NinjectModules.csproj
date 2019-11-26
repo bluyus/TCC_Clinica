@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MedicamentoRepositoryModule.cs" />
     <Compile Include="ExameRepositoryModule.cs" />
     <Compile Include="CidRepositoryModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

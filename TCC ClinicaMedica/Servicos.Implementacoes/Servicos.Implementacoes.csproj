@@ -46,6 +46,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ObjetosNegocio\ObjetosNegocio.csproj">
+      <Project>{17F88CAC-374F-4435-8FC3-179A97704996}</Project>
+      <Name>ObjetosNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositorios.Contratos\Repositorios.Contratos.csproj">
+      <Project>{C9E0B6FC-522B-4911-985B-17913CD0586D}</Project>
+      <Name>Repositorios.Contratos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Servicos.Contratos\Servicos.Contratos.csproj">
       <Project>{89B73E17-3D3C-4C52-959A-0DB64B739A31}</Project>
       <Name>Servicos.Contratos</Name>
